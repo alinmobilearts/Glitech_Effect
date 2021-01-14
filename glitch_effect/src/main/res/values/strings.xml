@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Glitch Photo Video Maker</string>
+
+    <string name="developer_id">Own InfoSoft</string>
+
+    <string name="parent_folder_name">Glitch Photo and Video Editor</string>
+    <string name="video_folder">Glitch Video</string>
+    <string name="message1">Delete This Image ?</string>
+    <string name="message2">Delete This Video ?</string>
+    <string name="message3">Want to save Video ?</string>
+    <string name="message4">You need to enable permissions to Record Video</string>
+
+    <string name="my_creation">My Creation</string>
+    <string name="image_folder">Glitch Image</string>
+    <string name="live_folder">Glitch Live Image</string>
+    <string name="nameimage">GlitchImage</string>
+    <string name="namevideo">GlitchVideo</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+</resources>

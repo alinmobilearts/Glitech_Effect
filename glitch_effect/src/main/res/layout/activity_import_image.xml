@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/glitch_bg">
+
+    <RelativeLayout
+        android:id="@+id/ax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/asd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btn_video"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_btn_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:tint="@color/colorAccent"
+                android:scaleType="center"
+                app:layout_constraintBottom_toTopOf="@+id/camera_text"
+                app:layout_constraintEnd_toStartOf="@+id/btn_gallery"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_photo_camera_48" />
+
+            <TextView
+                android:id="@+id/camera_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/camera"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btn_video"
+                app:layout_constraintStart_toStartOf="@+id/btn_video"
+                app:layout_constraintTop_toBottomOf="@+id/btn_video" />
+
+            <ImageView
+                android:id="@+id/btn_gallery"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_btn_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="center"
+                android:tint="@color/colorAccent"
+                android:src="@drawable/ic_baseline_photo_library_48"
+                app:layout_constraintBottom_toTopOf="@+id/gallery_text"
+                app:layout_constraintEnd_toStartOf="@+id/btn_created"
+                app:layout_constraintStart_toEndOf="@+id/btn_video"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/gallery_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/gallery"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btn_gallery"
+                app:layout_constraintStart_toStartOf="@+id/btn_gallery"
+                app:layout_constraintTop_toBottomOf="@+id/btn_gallery" />
+
+
+            <ImageView
+                android:id="@+id/btn_created"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_btn_bg"
+                android:clickable="true"
+                android:tint="@color/colorAccent"
+                android:focusable="true"
+                android:scaleType="center"
+                android:src="@drawable/ic_baseline_save_48"
+                app:layout_constraintBottom_toTopOf="@+id/creation_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_gallery"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/creation_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/my_creation"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btn_created"
+                app:layout_constraintStart_toStartOf="@+id/btn_created"
+                app:layout_constraintTop_toBottomOf="@+id/btn_created" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/aa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:weightSum="3">
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/btn_video"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:src="@drawable/ic_camera1" />-->
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--    <com.google.android.gms.ads.AdView-->
+    <!--        android:id="@+id/adView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        app:adSize="BANNER"-->
+    <!--        app:adUnitId="@string/google_baner" />-->
+
+</RelativeLayout>

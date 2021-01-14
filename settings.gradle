@@ -1,0 +1,3 @@
+include ':glitch_effect'
+include ':app'
+rootProject.name='Glitech_Effect'
